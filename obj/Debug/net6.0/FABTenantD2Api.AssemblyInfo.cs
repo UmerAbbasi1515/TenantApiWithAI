@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FABTenantD2Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9111db1ac6d6382c19b26c9947079865660fa833")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+360f352f4821091e60bf3a7c5aaa546506bf57be")]
 [assembly: System.Reflection.AssemblyProductAttribute("FABTenantD2Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FABTenantD2Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

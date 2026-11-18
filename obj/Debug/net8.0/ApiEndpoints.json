@@ -1,0 +1,4109 @@
+[
+  {
+    "ContainingType": "Pms.Controllers.AIAssistantController",
+    "Method": "Ask",
+    "RelativePath": "AIAssistant/Ask",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "prompt",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pms.Controllers.AIAssistantController",
+    "Method": "DeleteConversation",
+    "RelativePath": "AIAssistant/DeleteConversation",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "conversationId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pms.Controllers.AIAssistantController",
+    "Method": "EndConversation",
+    "RelativePath": "AIAssistant/EndConversation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pms.Controllers.AIAssistantController",
+    "Method": "GenerateEmbiddingForViews",
+    "RelativePath": "AIAssistant/GenerateEmbiddingForViews",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pms.Controllers.AIAssistantController",
+    "Method": "GetActiveConversationMessages",
+    "RelativePath": "AIAssistant/GetActiveConversationMessages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "messageCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pms.Controllers.AIAssistantController",
+    "Method": "GetConversation",
+    "RelativePath": "AIAssistant/GetConversation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pms.Controllers.AIAssistantController",
+    "Method": "GetConversationMessages",
+    "RelativePath": "AIAssistant/GetConversationMessages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "conversationId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "messageCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pms.Controllers.AIAssistantController",
+    "Method": "GetConversations",
+    "RelativePath": "AIAssistant/GetConversations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pms.Controllers.AIAssistantController",
+    "Method": "Index",
+    "RelativePath": "AIAssistant/Index",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pms.Controllers.AIAssistantController",
+    "Method": "Questions",
+    "RelativePath": "AIAssistant/Questions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pms.Controllers.AIAssistantController",
+    "Method": "SaveFeedBack",
+    "RelativePath": "AIAssistant/SaveFeedBack",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ConversationId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Helpful",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Comment",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "portalName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pms.Controllers.AIAssistantController",
+    "Method": "SyncLocalViewsVectorsWithQdrant",
+    "RelativePath": "AIAssistant/SyncLocalViewsVectorsWithQdrant",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.CaseController",
+    "Method": "AddExtensionRequest",
+    "RelativePath": "api/Tenant/Case/AddExtensionRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FABTenantD2Api.Models.AddCaseRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.CaseController",
+    "Method": "AddRenewalRequest",
+    "RelativePath": "api/Tenant/Case/AddRenewalRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FABTenantD2Api.Models.AddCaseRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.CaseController",
+    "Method": "AddTerminateRequest",
+    "RelativePath": "api/Tenant/Case/AddTerminateRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FABTenantD2Api.Models.AddCaseRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.CaseController",
+    "Method": "CanAddNewCase",
+    "RelativePath": "api/Tenant/Case/CanAddNewCase",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Contractid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.CaseController",
+    "Method": "CheckinContract",
+    "RelativePath": "api/Tenant/Case/CheckinContract",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FABTenantD2Api.Models.CheckInCaseRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.CaseController",
+    "Method": "CreateSignatureRequest",
+    "RelativePath": "api/Tenant/Case/CreateSignatureRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FABTenantD2Api.Models.AddCaseRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.CaseController",
+    "Method": "GetExtensionPeriod",
+    "RelativePath": "api/Tenant/Case/GetExtensionPeriod",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.DownloadContractTerms",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.CaseController",
+    "Method": "GetRenewalContractInfo",
+    "RelativePath": "api/Tenant/Case/GetRenewalContractInfo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.DownloadContractTerms",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.CaseController",
+    "Method": "GetVacatingList",
+    "RelativePath": "api/Tenant/Case/GetVacatingList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.CaseController",
+    "Method": "LegalSettlementContract",
+    "RelativePath": "api/Tenant/Case/LegalSettlementContract",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FABTenantD2Api.Models.CheckInCaseRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ChargesController",
+    "Method": "GetCharges",
+    "RelativePath": "api/Tenant/Charges/GetCharges",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContractId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ChargesController",
+    "Method": "GetPaymentDetails",
+    "RelativePath": "api/Tenant/Charges/GetPaymentDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContractId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "InsertErrorLog",
+    "RelativePath": "api/Tenant/Contracts",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "error",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "ConvertImageToByteArray",
+    "RelativePath": "api/Tenant/Contracts",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "imageName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Byte[]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "UpdateContractPaymentMethodCopy",
+    "RelativePath": "api/Tenant/Contracts/ ",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "PaymentModeId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PaymentSettingId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SelfDelivery",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ChequeNo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "AddContractPayments",
+    "RelativePath": "api/Tenant/Contracts/AddContractPayments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FABTenantApi.Models.RegisterContractPayment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "CanCheckIn",
+    "RelativePath": "api/Tenant/Contracts/CanCheckIn",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetOutstandingPayments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "CanDownloadContract",
+    "RelativePath": "api/Tenant/Contracts/CanDownloadContract",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetOutstandingPayments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "CanRenewContract",
+    "RelativePath": "api/Tenant/Contracts/CanRenewContract",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContractId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "CanSubmitLegalCase",
+    "RelativePath": "api/Tenant/Contracts/CanSubmitLegalCase",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContractId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "CaseCheckinContract",
+    "RelativePath": "api/Tenant/Contracts/CaseCheckinContract",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FABTenantApi.Models.CaseCheckInVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "CheckPMSContract",
+    "RelativePath": "api/Tenant/Contracts/CheckPMSContract",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContractID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "TenantId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "ChequeDueWithIn30Days",
+    "RelativePath": "api/Tenant/Contracts/ChequeDueWithIn30Days",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "ContractChargeReceipts",
+    "RelativePath": "api/Tenant/Contracts/ContractChargeReceipts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.ConractChargeRecepts",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "ContractExpire30Days",
+    "RelativePath": "api/Tenant/Contracts/ContractExpire30Days",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "ContractPayables",
+    "RelativePath": "api/Tenant/Contracts/ContractPayables",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetOutstandingPayments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "ContractRenewalActions",
+    "RelativePath": "api/Tenant/Contracts/ContractRenewalActions",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "DownloadCheque",
+    "RelativePath": "api/Tenant/Contracts/DownloadCheque",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vm",
+        "Type": "FABTenantApi.Controllers.RemoveContractCheque",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "DownloadChequeNew",
+    "RelativePath": "api/Tenant/Contracts/DownloadChequeNew",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vm",
+        "Type": "FABTenantApi.Controllers.RemoveContractCheque",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "DownloadContract",
+    "RelativePath": "api/Tenant/Contracts/DownloadContract",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetOutstandingPayments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "DownloadContractTerms",
+    "RelativePath": "api/Tenant/Contracts/DownloadContractTerms",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "DownloadContractTermsNew",
+    "RelativePath": "api/Tenant/Contracts/DownloadContractTermsNew",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "DownloadContractTermsold",
+    "RelativePath": "api/Tenant/Contracts/DownloadContractTermsold",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestbody",
+        "Type": "FABTenantD2Api.Controllers.DownloadContractTerms",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "DownloadContractWithSignature",
+    "RelativePath": "api/Tenant/Contracts/DownloadContractWithSignature",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContractID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "DownloadNewContractTerms",
+    "RelativePath": "api/Tenant/Contracts/DownloadNewContractTerms",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "DownloadOfferLetter",
+    "RelativePath": "api/Tenant/Contracts/DownloadOfferLetter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetOutstandingPayments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "DownloadSignedContract",
+    "RelativePath": "api/Tenant/Contracts/DownloadSignedContract",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetOutstandingPayments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "GeneratePMSContract",
+    "RelativePath": "api/Tenant/Contracts/GeneratePMSContract",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContractID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "TenantId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "GetApproveMunicipal",
+    "RelativePath": "api/Tenant/Contracts/GetApproveMunicipal",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetOutstandingPayments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "GetApproveMunicipalNew",
+    "RelativePath": "api/Tenant/Contracts/GetApproveMunicipalNew",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetOutstandingPayments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "GetContractCharges",
+    "RelativePath": "api/Tenant/Contracts/GetContractCharges",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetOutstandingPayments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "GetContractCheques",
+    "RelativePath": "api/Tenant/Contracts/GetContractCheques",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetContractCheques",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "GetContractDetails",
+    "RelativePath": "api/Tenant/Contracts/GetContractDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetOutstandingPayments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "GetContractPayments",
+    "RelativePath": "api/Tenant/Contracts/GetContractPayments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetOutstandingPayments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "GetContracts",
+    "RelativePath": "api/Tenant/Contracts/GetContracts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "GetContractStatus",
+    "RelativePath": "api/Tenant/Contracts/GetContractStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "GetContractswithFilter",
+    "RelativePath": "api/Tenant/Contracts/GetContractswithFilter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestBody",
+        "Type": "FABTenantApi.Controllers.GetConTractSwithFilter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "GetContractUnits",
+    "RelativePath": "api/Tenant/Contracts/GetContractUnits",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetOutstandingPayments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "GetOutstandingPayments",
+    "RelativePath": "api/Tenant/Contracts/GetOutstandingPayments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetOutstandingPayments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "GetOutstandingPaymentsNew",
+    "RelativePath": "api/Tenant/Contracts/GetOutstandingPaymentsNew",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetOutstandingPayments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "GetPropertyImage",
+    "RelativePath": "api/Tenant/Contracts/GetPropertyImage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "FABTenantApi.Controllers.GetPropertyImage",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "GetPropertyTypes",
+    "RelativePath": "api/Tenant/Contracts/GetPropertyTypes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "GetUnitAditionalDetails",
+    "RelativePath": "api/Tenant/Contracts/GetUnitAditionalDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetUnitDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "GetUnitDetails",
+    "RelativePath": "api/Tenant/Contracts/GetUnitDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetUnitDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "GetUnitImage",
+    "RelativePath": "api/Tenant/Contracts/GetUnitImage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetUnitDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "GetUnits",
+    "RelativePath": "api/Tenant/Contracts/GetUnits",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContractId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "NewContractActions",
+    "RelativePath": "api/Tenant/Contracts/NewContractActions",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "OnlinePayments",
+    "RelativePath": "api/Tenant/Contracts/OnlinePayments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetOutstandingPayments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "OnlinePaymentsNew",
+    "RelativePath": "api/Tenant/Contracts/OnlinePaymentsNew",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetOutstandingPayments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "RemoveContractCheque",
+    "RelativePath": "api/Tenant/Contracts/RemoveContractCheque",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.RemoveContractCheque",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "RemoveContractChequeNew",
+    "RelativePath": "api/Tenant/Contracts/RemoveContractChequeNew",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.RemoveContractCheque",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "UpdateContractPaymentAddress",
+    "RelativePath": "api/Tenant/Contracts/UpdateContractPaymentAddress",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FABTenantApi.Models.ContractAddress",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "UpdateContractPaymentAddressNew",
+    "RelativePath": "api/Tenant/Contracts/UpdateContractPaymentAddressNew",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FABTenantApi.Models.ContractAddress",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "UpdateContractPaymentMethod",
+    "RelativePath": "api/Tenant/Contracts/UpdateContractPaymentMethod",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "PaymentModeId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PaymentSettingId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SelfDelivery",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ChequeNo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "UpdateContractPaymentMethodNew",
+    "RelativePath": "api/Tenant/Contracts/UpdateContractPaymentMethodNew",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "PaymentModeId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PaymentSettingId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SelfDelivery",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ChequeNo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "UpdateContractStage",
+    "RelativePath": "api/Tenant/Contracts/UpdateContractStage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.UpdateContractStage",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ContractsController",
+    "Method": "UpdateContractStageNew",
+    "RelativePath": "api/Tenant/Contracts/UpdateContractStageNew",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.UpdateContractStage",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.DashboardController",
+    "Method": "GetDashboardNotifications",
+    "RelativePath": "api/Tenant/Dashboard/GetDashboardNotifications",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.DashboardController",
+    "Method": "GetData",
+    "RelativePath": "api/Tenant/Dashboard/GetData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.DashboardController",
+    "Method": "GetDataV1",
+    "RelativePath": "api/Tenant/Dashboard/GetDataV1",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.DashboardController",
+    "Method": "GetImage",
+    "RelativePath": "api/Tenant/Dashboard/GetImage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.DashboardController",
+    "Method": "GetServiceRequests",
+    "RelativePath": "api/Tenant/Dashboard/GetServiceRequests",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.DashboardController",
+    "Method": "GetStats",
+    "RelativePath": "api/Tenant/Dashboard/GetStats",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.DashboardController",
+    "Method": "GetUnits",
+    "RelativePath": "api/Tenant/Dashboard/GetUnits",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.DashboardController",
+    "Method": "ToBePaidIn30Days",
+    "RelativePath": "api/Tenant/Dashboard/ToBePaidIn30Days",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.DashboardController",
+    "Method": "Info",
+    "RelativePath": "api/Tenant/Dashboard/VInfo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.GatewayPaymentController",
+    "Method": "RegisterPayment",
+    "RelativePath": "api/Tenant/GatewayPayment/RegisterPayment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FABTenantD2Api.Models.RegisterPaymentVm",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.GatewayPaymentController",
+    "Method": "RegisterPaymentCopy",
+    "RelativePath": "api/Tenant/GatewayPayment/RegisterPaymentCopy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FABTenantD2Api.Models.RegisterPaymentVm",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.GatewayPaymentController",
+    "Method": "RegisterPaymentNew",
+    "RelativePath": "api/Tenant/GatewayPayment/RegisterPaymentNew",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FABTenantD2Api.Models.RegisterPaymentVm",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.GatewayPaymentController",
+    "Method": "UnVerfiedAllPayment",
+    "RelativePath": "api/Tenant/GatewayPayment/UnVerfiedAllPayment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.GatewayPaymentController",
+    "Method": "UnVerfiedContractPayment",
+    "RelativePath": "api/Tenant/GatewayPayment/UnVerfiedContractPayment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.UnVerfiedContractPayment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.GeneralDataController",
+    "Method": "GetConfigurationValue",
+    "RelativePath": "api/Tenant/GeneralData/GetConfigurationValue",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.GeneralDataController\u002BGetConfigurationValueRM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.GeneralDataController",
+    "Method": "GetServices",
+    "RelativePath": "api/Tenant/GeneralData/GetServices",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CategoryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.GeneralDataController",
+    "Method": "GetServicesCategories",
+    "RelativePath": "api/Tenant/GeneralData/GetServicesCategories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.NotificationsController",
+    "Method": "Archived",
+    "RelativePath": "api/Tenant/Notifications/Archived",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notification",
+        "Type": "FABTenantApi.Models.NotificationModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.NotificationsController",
+    "Method": "DownloadNotificationFile",
+    "RelativePath": "api/Tenant/Notifications/DownloadNotificationFile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.DownloadNotificationFile",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.NotificationsController",
+    "Method": "Get",
+    "RelativePath": "api/Tenant/Notifications/Get",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.getNotificaion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.NotificationsController",
+    "Method": "GetDetails",
+    "RelativePath": "api/Tenant/Notifications/GetDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetNotificationFiles",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.NotificationsController",
+    "Method": "GetNotificationFiles",
+    "RelativePath": "api/Tenant/Notifications/GetNotificationFiles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetNotificationFiles",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.NotificationsController",
+    "Method": "Read",
+    "RelativePath": "api/Tenant/Notifications/Read",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notification",
+        "Type": "FABTenantApi.Models.NotificationModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.OfferController",
+    "Method": "AcceptOffersUbsPropT",
+    "RelativePath": "api/Tenant/Offer/AcceptOffersUbsPropT",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.GetOfferIDNo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.OfferController",
+    "Method": "AddOfferTicketReply",
+    "RelativePath": "api/Tenant/Offer/AddOfferTicketReply",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "OfferId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Reply",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.OfferController",
+    "Method": "DownloadOfferDocuments",
+    "RelativePath": "api/Tenant/Offer/DownloadOfferDocuments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "FABTenantD2Api.Controllers.DownloadofferFilesRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.OfferController",
+    "Method": "DownloadOfferTicketFile",
+    "RelativePath": "api/Tenant/Offer/DownloadOfferTicketFile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.DownloadTicketFile",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.OfferController",
+    "Method": "GetOffer",
+    "RelativePath": "api/Tenant/Offer/GetOffer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Models.GetOfferVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.OfferController",
+    "Method": "GetOfferDetail",
+    "RelativePath": "api/Tenant/Offer/GetOfferDetail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.GetOfferDetail",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.OfferController",
+    "Method": "GetOfferDocuments",
+    "RelativePath": "api/Tenant/Offer/GetOfferDocuments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.GetOfferID",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.OfferController",
+    "Method": "GetOffersFromUbsPropT",
+    "RelativePath": "api/Tenant/Offer/GetOffersFromUbsPropT",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.OfferController",
+    "Method": "GetOfferTicketReplies",
+    "RelativePath": "api/Tenant/Offer/GetOfferTicketReplies",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.GetOfferDetail",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.OfferController",
+    "Method": "RejectOffersUbsPropT",
+    "RelativePath": "api/Tenant/Offer/RejectOffersUbsPropT",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.GetOfferIDNo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.OfferController",
+    "Method": "UploadOfferFiles",
+    "RelativePath": "api/Tenant/Offer/UploadOfferFiles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DocumentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MasterID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TitleAR",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AddedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Suspend",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OriginalFiles",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "File",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "ExpiryDate",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.PaymentsController",
+    "Method": "ConvertImageToByteArray",
+    "RelativePath": "api/Tenant/Payments",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "imageName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Byte[]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.PaymentsController",
+    "Method": "DownloadReceipt",
+    "RelativePath": "api/Tenant/Payments/DownloadReceipt",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.DownloadReceipt",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.PaymentsController",
+    "Method": "Get",
+    "RelativePath": "api/Tenant/Payments/Get",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "paymentRequestModel",
+        "Type": "FABTenantD2Api.Models.PaymentRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.PaymentsController",
+    "Method": "GetPaymentMethod",
+    "RelativePath": "api/Tenant/Payments/GetPaymentMethod",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.PaymentsController",
+    "Method": "Test",
+    "RelativePath": "api/Tenant/Payments/Test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ProfileController",
+    "Method": "CanEditProfile",
+    "RelativePath": "api/Tenant/Profile/CanEditProfile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ProfileController",
+    "Method": "Get",
+    "RelativePath": "api/Tenant/Profile/Get",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ProfileController",
+    "Method": "UpdateProfileRequest",
+    "RelativePath": "api/Tenant/Profile/UpdateProfileRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FABTenantD2Api.Models.UpdateProfileServiceRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "AddTicketReply",
+    "RelativePath": "api/Tenant/ServiceRequests/AddTicketReply",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CaseId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Reply",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "CancelRequest",
+    "RelativePath": "api/Tenant/ServiceRequests/CancelRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.CaseNoBody",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "CaseCategory",
+    "RelativePath": "api/Tenant/ServiceRequests/CaseCategory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "CaseSubCategory",
+    "RelativePath": "api/Tenant/ServiceRequests/CaseSubCategory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.CaseSubCategoryModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "Circumstances",
+    "RelativePath": "api/Tenant/ServiceRequests/Circumstances",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "DownloadServiceRequestDocuments",
+    "RelativePath": "api/Tenant/ServiceRequests/DownloadServiceRequestDocuments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "FABTenantD2Api.Controllers.DownloadServiceRequestDocuments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "DownloadTicketFile",
+    "RelativePath": "api/Tenant/ServiceRequests/DownloadTicketFile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.DownloadTicketFile",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "GetCaseTypes",
+    "RelativePath": "api/Tenant/ServiceRequests/GetCaseTypes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "GetCities",
+    "RelativePath": "api/Tenant/ServiceRequests/GetCities",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "GetContactTiming",
+    "RelativePath": "api/Tenant/ServiceRequests/GetContactTiming",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "GetFaqCategories",
+    "RelativePath": "api/Tenant/ServiceRequests/GetFaqCategories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "GetFaqs",
+    "RelativePath": "api/Tenant/ServiceRequests/GetFaqs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.CaseSubCategoryModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "GetInitialAssesments",
+    "RelativePath": "api/Tenant/ServiceRequests/GetInitialAssesments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "GetPreferredLanguages",
+    "RelativePath": "api/Tenant/ServiceRequests/GetPreferredLanguages",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "GetPropertyUnits",
+    "RelativePath": "api/Tenant/ServiceRequests/GetPropertyUnits",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Tenantid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "GetServiceLevels",
+    "RelativePath": "api/Tenant/ServiceRequests/GetServiceLevels",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "GetServiceRequestDetails",
+    "RelativePath": "api/Tenant/ServiceRequests/GetServiceRequestDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.CaseNoBody",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "GetServiceRequestDocuments",
+    "RelativePath": "api/Tenant/ServiceRequests/GetServiceRequestDocuments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.GetServiceRequestDocuments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "GetServiceRequestDocumentsByType",
+    "RelativePath": "api/Tenant/ServiceRequests/GetServiceRequestDocumentsByType",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.GetServiceRequestDocumentsByType",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "GetServiceRequestDocumentsPdf",
+    "RelativePath": "api/Tenant/ServiceRequests/GetServiceRequestDocumentsPdf",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.GetServiceRequestDocuments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "GetServiceRequestImages",
+    "RelativePath": "api/Tenant/ServiceRequests/GetServiceRequestImages",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CaseNo",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "RoleId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "GetServiceRequestInfo",
+    "RelativePath": "api/Tenant/ServiceRequests/GetServiceRequestInfo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CaseNo",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "GetServiceRequestThumbnailList",
+    "RelativePath": "api/Tenant/ServiceRequests/GetServiceRequestThumbnailList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.GetServiceRequestDocuments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "GetSRFeedback",
+    "RelativePath": "api/Tenant/ServiceRequests/GetSRFeedback",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.CaseNoBody",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "GetTenantContractUnit",
+    "RelativePath": "api/Tenant/ServiceRequests/GetTenantContractUnit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.GetTenantContractUnit",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "GetTenantServiceRequests",
+    "RelativePath": "api/Tenant/ServiceRequests/GetTenantServiceRequests",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.GetTenantServiceRequests",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "GetTicketReplies",
+    "RelativePath": "api/Tenant/ServiceRequests/GetTicketReplies",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.GetTicketReplies",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "GetUnitCategories",
+    "RelativePath": "api/Tenant/ServiceRequests/GetUnitCategories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "LandlordApproval",
+    "RelativePath": "api/Tenant/ServiceRequests/LandlordApproval",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "LargeFileUpload",
+    "RelativePath": "api/Tenant/ServiceRequests/LargeFileUpload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AttachmentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CaseNo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DocumentTypeId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ExpireDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "File",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmirateIdNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Nationality",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameAr",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IssueDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DOB",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "RemoveServiceRequestFiles",
+    "RelativePath": "api/Tenant/ServiceRequests/RemoveServiceRequestFiles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelRequest",
+        "Type": "FABTenantD2Api.Models.RemoveServiceRequestVm",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "ReopenServiceRequest",
+    "RelativePath": "api/Tenant/ServiceRequests/ReopenServiceRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.CaseNoBody",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "SaveServiceRequestv1",
+    "RelativePath": "api/Tenant/ServiceRequests/SaveServiceRequestv1",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FABTenantD2Api.Models.AddServiceRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "SaveSRFeedback",
+    "RelativePath": "api/Tenant/ServiceRequests/SaveSRFeedback",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FABTenantD2Api.Models.SaveSRFeedbackVm",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "UpdateCaseAttachment",
+    "RelativePath": "api/Tenant/ServiceRequests/UpdateCaseAttachment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AttachmentId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ExpireDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "File",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "UpdateContractDocumentStage",
+    "RelativePath": "api/Tenant/ServiceRequests/UpdateContractDocumentStage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.UpdateContractDocumentStage",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "UpdateServiceRequest",
+    "RelativePath": "api/Tenant/ServiceRequests/UpdateServiceRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FABTenantD2Api.Models.UpdateServiceRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "UploadServiceRequestEmirateId",
+    "RelativePath": "api/Tenant/ServiceRequests/UploadServiceRequestEmirateId",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AttachmentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CaseNo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DocumentTypeId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ExpireDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "File",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmirateIdNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Nationality",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameAr",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IssueDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DOB",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "UploadServiceRequestFiles",
+    "RelativePath": "api/Tenant/ServiceRequests/UploadServiceRequestFiles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AttachmentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CaseNo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DocumentTypeId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ExpireDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "File",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmirateIdNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Nationality",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameAr",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IssueDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DOB",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "UploadServiceRequestFiles2",
+    "RelativePath": "api/Tenant/ServiceRequests/UploadServiceRequestFiles2",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "UploadServiceRequestFilesNew",
+    "RelativePath": "api/Tenant/ServiceRequests/UploadServiceRequestFilesNew",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AttachmentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CaseNo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DocumentTypeId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ExpireDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "File",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmirateIdNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Nationality",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameEng",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameAr",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IssueDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DOB",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ServiceRequestsController",
+    "Method": "UploadTicketFiles",
+    "RelativePath": "api/Tenant/ServiceRequests/UploadTicketFiles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CaseId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "File",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.ServicesController",
+    "Method": "GetRequests",
+    "RelativePath": "api/Tenant/Services/GetRequests",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.SurveyController",
+    "Method": "AddSurvey",
+    "RelativePath": "api/Tenant/Survey/AddSurvey",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CategoryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CaseNo",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.SurveyController",
+    "Method": "GetSurveyQuestionAnswer",
+    "RelativePath": "api/Tenant/Survey/GetSurveyQuestionAnswer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.GetSurveyQuestionAnswer",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.SurveyController",
+    "Method": "GetSurveyQuestions",
+    "RelativePath": "api/Tenant/Survey/GetSurveyQuestions",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantD2Api.Controllers.CaseNoBody",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.SurveyController",
+    "Method": "SaveSurveyAnswers",
+    "RelativePath": "api/Tenant/Survey/SaveSurveyAnswers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FABTenantD2Api.Models.SaveSurveyVm",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.UnitsController",
+    "Method": "GetUnitDetails",
+    "RelativePath": "api/Tenant/Units/GetUnitDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestModel",
+        "Type": "FABTenantApi.Controllers.GetUnitDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.UnitsController",
+    "Method": "GetUnits",
+    "RelativePath": "api/Tenant/Units/GetUnits",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FABTenantD2Api.Controllers.ValuesController",
+    "Method": "UploadServiceRequestFiles2",
+    "RelativePath": "api/Tenant/Values/UploadServiceRequestFiles3",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.DefaultController",
+    "Method": "HandleError",
+    "RelativePath": "error",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FABTenantApi.Controllers.DefaultController",
+    "Method": "HandleErrorDevelopment",
+    "RelativePath": "error-development",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

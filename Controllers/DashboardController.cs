@@ -624,6 +624,7 @@ namespace FABTenantApi.Controllers
                 {
                     dashboardVm.ActiveContracts = ActiveContract;
                 }
+                //"hello"
                 dashboardVm.TenantId = TenantId;
                 if (dashboardVm != null)
                 {

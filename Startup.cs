@@ -65,6 +65,7 @@ namespace FABTenantD2Api
             //   );
             //DecoderReplacementFallback above with below
             //services.AddCors();
+   
             services.AddDbContext<FABAppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("FABModels")));
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<ITokenService, TokenService>();

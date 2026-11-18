@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "D:\\AI_Apis\\TenantApiWithAI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|d:\\ai_apis\\tenantapiwithai\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|solutionrelative:controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|d:\\ai_apis\\tenantapiwithai\\fabtenantd2api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|solutionrelative:fabtenantd2api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|d:\\ai_apis\\tenantapiwithai\\controllers\\gatewaypaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|solutionrelative:controllers\\gatewaypaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|d:\\ai_apis\\tenantapiwithai\\controllers\\contractscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|solutionrelative:controllers\\contractscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|d:\\ai_apis\\tenantapiwithai\\controllers\\casecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|solutionrelative:controllers\\casecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|d:\\ai_apis\\tenantapiwithai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|d:\\ai_apis\\tenantapiwithai\\repository\\dashboardrepo\\dashboardrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|solutionrelative:repository\\dashboardrepo\\dashboardrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -67,63 +55,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DashboardController.cs",
-              "DocumentMoniker": "D:\\AI_Apis\\TenantApiWithAI\\Controllers\\DashboardController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
-              "ToolTip": "D:\\AI_Apis\\TenantApiWithAI\\Controllers\\DashboardController.cs",
-              "RelativeToolTip": "Controllers\\DashboardController.cs",
-              "ViewState": "AgIAAGUCAAAAAAAAAAAwwG8CAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-22T06:04:32.155Z",
+              "Title": "FABTenantD2Api",
+              "DocumentMoniker": "D:\\AI_Apis\\TenantApiWithAI\\FABTenantD2Api.csproj",
+              "RelativeDocumentMoniker": "FABTenantD2Api.csproj",
+              "ToolTip": "D:\\AI_Apis\\TenantApiWithAI\\FABTenantD2Api.csproj",
+              "RelativeToolTip": "FABTenantD2Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-11-18T13:09:22.991Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ContractsController.cs",
-              "DocumentMoniker": "D:\\AI_Apis\\TenantApiWithAI\\Controllers\\ContractsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ContractsController.cs",
-              "ToolTip": "D:\\AI_Apis\\TenantApiWithAI\\Controllers\\ContractsController.cs",
-              "RelativeToolTip": "Controllers\\ContractsController.cs",
-              "ViewState": "AgIAAAMRAAAAAAAAAAApwDQSAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T05:03:35.851Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GatewayPaymentController.cs",
-              "DocumentMoniker": "D:\\AI_Apis\\TenantApiWithAI\\Controllers\\GatewayPaymentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\GatewayPaymentController.cs",
-              "ToolTip": "D:\\AI_Apis\\TenantApiWithAI\\Controllers\\GatewayPaymentController.cs",
-              "RelativeToolTip": "Controllers\\GatewayPaymentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIBAABCAAAAAAAAAA==",
+              "Title": "DashboardRepo.cs",
+              "DocumentMoniker": "D:\\AI_Apis\\TenantApiWithAI\\Repository\\DashboardRepo\\DashboardRepo.cs",
+              "RelativeDocumentMoniker": "Repository\\DashboardRepo\\DashboardRepo.cs",
+              "ToolTip": "D:\\AI_Apis\\TenantApiWithAI\\Repository\\DashboardRepo\\DashboardRepo.cs",
+              "RelativeToolTip": "Repository\\DashboardRepo\\DashboardRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T04:40:36.799Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\AI_Apis\\TenantApiWithAI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\AI_Apis\\TenantApiWithAI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-14T09:17:54.13Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CaseController.cs",
-              "DocumentMoniker": "D:\\AI_Apis\\TenantApiWithAI\\Controllers\\CaseController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CaseController.cs",
-              "ToolTip": "D:\\AI_Apis\\TenantApiWithAI\\Controllers\\CaseController.cs",
-              "RelativeToolTip": "Controllers\\CaseController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkBAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-09T07:22:19.535Z"
+              "WhenOpened": "2026-11-18T12:44:03.742Z",
+              "EditorCaption": ""
             }
           ]
         }
