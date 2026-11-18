@@ -1,0 +1,33 @@
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+WORKDIR /app
+EXPOSE 8080
+ENV ASPNETCORE_URLS=http://*:8080
+#VOLUME /app
+
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+RUN apt-get update && apt-get install -y procps
+WORKDIR /src
+#VOLUME /vol
+COPY ["FABApiD2Authentication.csproj", "."]
+COPY "FABModels.dll" .
+RUN dotnet restore "./FABApiD2Authentication.csproj" 
+COPY . .
+WORKDIR "/src/."
+#VOLUME "/vol/."
+RUN dotnet build "FABApiD2Authentication.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "FABApiD2Authentication.csproj" -c Release -o /app/publish
+
+FROM base AS final
+RUN addgroup --group dotnetgroup --gid 2000 \
+&& adduser --disabled-password \
+    --uid 1000 \
+    --gid 2000 \
+    "dotnetuser"
+RUN chown dotnetuser:dotnetgroup /app
+USER dotnetuser:dotnetgroup
+WORKDIR /app
+#VOLUME /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "FABApiD2Authentication.dll"]

@@ -1,0 +1,145 @@
+﻿@model LoginVm
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAB Tenant Api</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/favicon.png">
+    <!-- App CSS -->
+    <link id="theme-style" rel="stylesheet" href="/assets/css/portal.css">
+
+    <!-- FontAwesome JS-->
+    <script defer src="/assets/plugins/fontawesome/js/all.min.js"></script>
+
+
+</head>
+<body class="app app-login p-0 bg-white">
+
+    <style>
+        .label-danger {
+            color: orangered;
+        }
+
+        .label-success {
+            color: forestgreen;
+        }
+    </style>
+    <div class="row g-0 app-auth-wrapper">
+        <div class="col-12 col-md-7 col-lg-6 auth-main-col text-center p-5">
+            <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                <div class="app-auth-body mx-auto">
+                    <div class="app-auth-branding mb-4"><a class="app-logo" href="#"><img class="logo-icon me-2" src="/assets/images/logo.png" alt="logo"></a></div>
+                    <h2 class="auth-heading text-center">Log in to Tenant API Portal<span style="font-size:12px">V2</span></h2>
+                    <h6 class="auth-heading text-center mb-5">Drop 2<span style="font-size:12px"></span></h6>
+                    <div class="auth-form-container text-start">
+                        <form role="form" asp-action="Login" asp-controller="Default" data-ajax="true" data-ajax-begin="onLoginBegin" data-ajax-failure="onLoginFailure" data-ajax-method="Post" data-ajax-success="onLoginSuccess" id="LoginForm" method="post" autocomplete="off" class="auth-form login-form">
+                            <div class="email mb-3" style="display:none; text-align:center" id="messageDiv">
+
+                            </div><!--//form-group-->
+                            <div class="email mb-3">
+                                <label class="sr-only" asp-for="UserName">Email</label>
+                                <input asp-for="UserName" id="UserName" name="UserName" type="email" class="form-control signin-email" placeholder="Email address">
+                                <span asp-validation-for="UserName" class="label label-danger"></span>
+                            </div><!--//form-group-->
+                            <div class="password mb-3">
+                                <label class="sr-only" asp-for="Password">Password</label>
+                                <input asp-for="Password" id="Password" name="Password" type="password" class="form-control signin-password" placeholder="Password">
+                                <span asp-validation-for="Password" class="label label-danger"></span>
+                                <div class="extra mt-3 row justify-content-between">
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="RememberPassword">
+                                            <label class="form-check-label" for="RememberPassword">
+                                                Remember me
+                                            </label>
+                                        </div>
+                                    </div><!--//col-6-->
+                                    <div class="col-6">
+
+                                    </div><!--//col-6-->
+                                </div><!--//extra-->
+                            </div><!--//form-group-->
+                            <div class="text-center">
+                                <button type="submit" class="btn app-btn-primary w-100 theme-btn mx-auto" id="LoginSubmitBtn">Log In</button>
+                            </div>
+                        </form>
+
+
+                    </div><!--//auth-form-container-->
+                </div><!--//auth-body-->
+
+
+            </div><!--//flex-column-->
+        </div><!--//auth-main-col-->
+        <div class="col-12 col-md-5 col-lg-6 h-100 auth-background-col">
+            <div class="auth-background-holder">
+            </div>
+            <div class="auth-background-mask"></div>
+            <div class="auth-background-overlay p-3 p-lg-5">
+                <div class="d-flex flex-column align-content-end h-100">
+                    <div class="h-100"></div>
+
+                </div>
+            </div><!--//auth-background-overlay-->
+        </div><!--//auth-background-col-->
+
+    </div>
+    <!-- Javascript -->
+    <script src="/assets/plugins/popper.min.js"></script>
+    <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Charts JS -->
+    <script src="/assets/plugins/chart.js/chart.min.js"></script>
+    <script src="/assets/js/index-charts.js"></script>
+
+    <!-- Page Specific JS -->
+    <script src="/assets/js/app.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+    <script>
+        $.validator.unobtrusive.parse('#LoginForm')
+        function onLoginBegin(req) {
+            $('#LoginSubmitBtn').html("<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true' style='margin-right:5px;'></span> Processing");
+
+        }
+        function onLoginSuccess(req) {
+            debugger
+            if (req.response == 'Success') {
+                $('#LoginId').val(req.loginId);
+                $("#messageDiv").show();
+                $("#messageDiv").html('<p class="label label-success">' + req.message + '</p>')
+                window.location.href = "/swagger";
+            }
+            else if (req.response == 'Failed') {
+                $("#LoginErroMessage").css('display', 'block');
+                $("#messageDiv").show();
+                $("#messageDiv").html('<p class="label label-danger">' + req.message + '</p>')
+                $('#LoginSubmitBtn').html("Login");
+
+            }
+            else {
+                onLoginFailure(req);
+            }
+        }
+        function onLoginFailure(req) {
+            $("#LoginErroMessage").css('display', 'block');
+            $("#messageDiv").show();
+            $("#messageDiv").html('<p class="label label-danger">' + req.message + '</p>')
+            $('#LoginSubmitBtn').html("Login");
+
+        }
+    </script>
+
+
+
+</body>
+</html>

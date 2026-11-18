@@ -1,0 +1,151 @@
+# This is a single trigger continuous pipeline to package a .Net Core application #
+# and deploy on an IIS Website. 
+# Pipeline performs below actions
+# a.	Checkout the code
+# b.  Transform the config
+# c.	Build the Image
+# d.	Tag the image
+# d.	Push to FAB repo
+# e.	Deploy FAB UAT env
+
+
+# https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/dotnet-core?view=azure-devops           #
+
+variables:
+  apiname: 'tenant01'
+  apifolder: 'tenant'
+  acrrepo: 'azuaenprovubsprodcr.azurecr.io'
+  ns: 'provis-uat'
+  deploymentname: 'tenant01-deployment'
+
+parameters:
+  - name: NoCache
+    type: boolean
+    default: false
+
+pool: 
+  name: Default
+
+name: 1$(Rev:.r)
+
+stages:
+
+#Stage for Build.
+- stage: buildimage
+  displayName: UAT
+  jobs:
+
+#Jobs Contains steps and tasks, 2 Jobs can run Parallely or on the Condition
+  - job: dockerbuild
+    displayName: FABP UAT Build and Deploy
+    steps:
+    - task: Bash@3
+      displayName: Docker Build
+      inputs:
+        targetType: 'inline'
+        script: |
+          chmod -R 777 .
+          echo 'docker build begins here'
+          ls
+          echo 'Moving settings for backup to $(Agent.ToolsDirectory)'
+          #  Copying Appsetting Files to Tools Directory
+          cp ./appsettings.production.fabp-prod.json $(Agent.ToolsDirectory)
+          cp ./appsettings.fabp-prod.json $(Agent.ToolsDirectory)
+          cp ./appsettings.production.fabp-uat.json $(Agent.ToolsDirectory)
+          cp ./appsettings.fabp-uat.json $(Agent.ToolsDirectory)
+          cp ./appsettings.production.colliers-uat.json $(Agent.ToolsDirectory)
+          cp ./appsettings.colliers-uat.json $(Agent.ToolsDirectory)
+          #   Removing Appsetting Files from root Directory
+          rm ./appsettings.production.fabp-prod.json
+          rm ./appsettings.fabp-prod.json
+          rm ./appsettings.production.fabp-uat.json
+          rm ./appsettings.fabp-uat.json
+          rm ./appsettings.production.colliers-uat.json
+          rm ./appsettings.colliers-uat.json
+          rm './appsettings.production.json'
+          rm './appsettings.json'
+          echo 'Moving Fabp-uat'
+          cp $(Agent.ToolsDirectory)/appsettings.production.fabp-uat.json ./appsettings.production.json
+          cp $(Agent.ToolsDirectory)/appsettings.fabp-uat.json ./appsettings.json
+          echo 'Moving Fabp-uat moved'
+          ls
+          pwd
+          docker build -t "$(apiname)" .
+          echo 'docker Tag begins here'
+          pwd
+          docker tag $(apiname) $(acrrepo)/$(apiname):$(Build.BuildNumber)
+          echo 'docker push begins here'
+          pwd
+          echo 'pushing the image $(acrrepo)/$(apiname):$(Build.BuildNumber)'
+          docker push $(acrrepo)/$(apiname):$(Build.BuildNumber)
+    - task: Bash@3
+      displayName: Colliers UAT Docker Build
+      inputs:
+        targetType: 'inline'
+        script: |
+          chmod -R 777 .
+          echo 'Colliers docker build begins here'
+          ls
+          echo 'Moving Colliers-uat'
+          rm './appsettings.production.json'
+          rm './appsettings.json'
+          cp $(Agent.ToolsDirectory)/appsettings.production.colliers-uat.json ./appsettings.production.json
+          cp $(Agent.ToolsDirectory)/appsettings.colliers-uat.json ./appsettings.json
+          echo 'Moving Colliers-uat moved'
+          ls
+          pwd
+          docker build -t "$(apiname)" .
+          echo 'docker Tag begins here'
+          pwd
+          docker tag $(apiname) $(acrrepo)/colliers-uat-$(apiname):$(Build.BuildNumber)
+          echo 'docker push begins here'
+          pwd
+          echo 'pushing the image $(acrrepo)/colliers-uat-$(apiname):$(Build.BuildNumber)'
+          docker push $(acrrepo)/colliers-uat-$(apiname):$(Build.BuildNumber)
+
+    # - task: Bash@3
+    #   displayName: UAT Deployment
+    #   inputs:
+    #     targetType: 'inline'
+    #     script: |
+    #       echo "deployment/$(deploymentname) $(apiname)=$(acrrepo)/$(apiname):$(Build.BuildNumber) -n $(ns)"
+    #       pwd
+    #       echo 'deploying image $(acrrepo)/$(apiname):$(Build.BuildNumber)'
+    #       kubectl set image deployment/$(deploymentname) $(apiname)=$(acrrepo)/$(apiname):$(Build.BuildNumber) -n $(ns)
+    #       echo 'getting the rolling deployment status'
+    #       kubectl rollout status deployment/$(deploymentname) -n $(ns)
+    #       kubectl describe deployment $(deploymentname) -n $(ns)
+
+
+- stage: proddeployment
+  displayName: 'Production'
+  jobs:
+  - deployment: pushprod
+    displayName: 'Prod Image Push'
+    environment: Prod
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: Bash@3
+            displayName: Prod Image Push
+            inputs:
+              targetType: 'inline'
+              script: |
+                  chmod -R 777 .
+                  rm './appsettings.production.json'
+                  rm './appsettings.json'
+                  cp $(Agent.ToolsDirectory)/appsettings.production.fabp-prod.json ./appsettings.production.json
+                  cp $(Agent.ToolsDirectory)/appsettings.fabp-prod.json ./appsettings.json
+                  ls
+                  echo 'docker build begins here'
+                  pwd
+                  docker build -t "$(apiname)" .
+                  echo 'docker Tag begins here'
+                  pwd
+                  docker tag $(apiname) $(acrrepo)/prod-$(apiname):$(Build.BuildNumber)
+                  echo 'docker push begins here'
+                  pwd
+                  echo 'pushing the image $(acrrepo)/prod-$(apiname):$(Build.BuildNumber)'
+                  docker push $(acrrepo)/prod-$(apiname):$(Build.BuildNumber)
+

@@ -1,0 +1,43 @@
+﻿@model FABTenantApi.Models.DownloadContractVm
+
+@using System.Web;
+<!DOCTYPE HTML>
+<html>
+
+<body onload="self.print()">
+    
+     <div>
+        @if (@Model.Res2 != null)
+        {
+            string imreBase64Data = Convert.ToBase64String(Model.Res2);
+            <img src="@string.Format("data:image/jpg;base64,{0}", imreBase64Data)" style="width: 100%;;height:100%" />
+        }
+    </div>
+    <div>
+        @if (@Model.Res3 != null)
+        {
+            string imreBase64Data = Convert.ToBase64String(Model.Res3);
+            <img src="@string.Format("data:image/jpg;base64,{0}", imreBase64Data)" style="width: 100%;" />
+        }
+    </div>
+
+    <div>
+        @if (@Model.Res4 != null)
+        {
+            string imreBase64Data = Convert.ToBase64String(Model.Res4);
+            <img src="@string.Format("data:image/jpg;base64,{0}", imreBase64Data)" style="width:100%;" />
+        }
+    </div>
+
+    <div>
+        @if (@Model.Res5 != null)
+        {
+            string imreBase64Data = Convert.ToBase64String(Model.Res5);
+            <img src="@string.Format("data:image/jpg;base64,{0}", imreBase64Data)" style="width: 100%;" />
+        }
+    </div>
+
+
+</body>
+
+</html>

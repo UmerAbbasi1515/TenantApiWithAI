@@ -1,0 +1,23 @@
+﻿@model FABTenantApi.Models.TermConditionVM
+@using System.Web;
+<!DOCTYPE HTML>
+<html>
+
+<body onload="self.print()">
+    <span>
+        @if (Model.Type == "Commercial")
+        {
+            @Html.Raw(HttpUtility.HtmlDecode(Model.Commercial));
+
+           @* <span>@Html.Raw(Model.Commercial)</span>*@
+        }
+        else
+        {
+            @Html.Raw(HttpUtility.HtmlDecode(Model.Residential));
+           @* <span>@Html.Raw(Model.Residential)</span>*@
+        }
+    </span>
+
+</body>
+
+</html>

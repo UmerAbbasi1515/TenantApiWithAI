@@ -1,0 +1,50 @@
+﻿
+@font-face {
+    font-family: "Open Sans";
+    src: url('fonts/open-sans/open-sans.regular.ttf') format('truetype');
+}
+
+body {
+    font-family: "Open Sans";
+    font-size: 13pt;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+}
+
+.tabledetails tr td {
+    border: solid 1px !important;
+    font-weight:normal;
+}
+
+#signatureBoard, #signatureBoard td, #signatureBoard table {
+    border: none;
+}
+
+/*h2 {
+            margin-bottom: 0;
+            padding: 0;
+        }
+
+        .auto-style1 {
+            width: 7%;
+        }
+
+        .auto-style2 {
+            height: 18px;
+        }*/
+
+@media print {
+    @page {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    body {
+        font-family: 'open-sans';
+        font-size: 13pt;
+    }
+
+    .tabledetails tr td {
+        border:solid 1px !important;
+    }
+}

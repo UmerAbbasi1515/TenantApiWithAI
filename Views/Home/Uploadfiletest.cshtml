@@ -1,0 +1,110 @@
+﻿@model FABTenantD2Api.Models.TestImage
+@{
+    ViewData["Title"] = "Upload File";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload File</title>
+
+    
+    <!-- App CSS -->
+    <style>
+        .label-danger {
+            color: orangered;
+        }
+
+        .label-success {
+            color: forestgreen;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <div class="text-center">
+                <h1 class="display-4">Upoad File</h1>
+
+            </div>
+            <div class="row" id="messagerowDiv" style="display:none">
+                <div class="col-md-10" id="messageDiv">
+                    .
+                </div>
+            </div>
+            <div class="row" id="loadGenerateWindow">
+                <div class="col-md-12">
+                    <form role="form" action="/tenant01/api/Tenant/ServiceRequests/LargeFileUpload" enctype="multipart/form-data" method="post">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>File</label>
+                                    <input type="file" asp-for="Image" name="File" id="file" value="" placeholder="Upload File" class="btn btn-primary" required />
+                                 
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-success">Upload</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022  - FAB App
+        </div>
+    </footer>
+    
+
+    <script>
+        $.validator.unobtrusive.parse('#SendSMSForm')
+        function onSendSMSBegin(req) {
+
+            $('#btnSendSMS').html("<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true' style='margin-right:5px;'></span> Processing");
+
+        }
+        function onSendSMSSuccess(req) {
+            if (req.response == 'Success') {
+                $("#messagerowDiv").show();
+                $("#messageDiv").html('<p class="label label-success">' + req.message + '</p>');
+                $("#btnSendSMS").css('display', 'block');
+                $('#btnSendSMS').html("Send SMS");
+                $('#SMSText').val('');
+                $('#Mobile').val('');
+            }
+            else if (req.response == 'Failed') {
+                $("#btnSendSMS").css('display', 'block');
+                $("#messagerowDiv").show();
+                $("#messageDiv").html('<p class="label label-danger">' + req.message + '</p>');
+                $('#btnSendSMS').html("Send SMS");
+                
+            }
+            else {
+                onSendSMSFailure(req);
+            }
+        }
+        function onSendSMSFailure(req) {
+
+            $("#messagerowDiv").show();
+            $("#messageDiv").html('<p class="label label-danger">' + req.message + '</p>');
+            $("#btnSendSMS").css('display', 'block');
+            $('#btnSendSMS').html("Send SMS");
+            
+        }
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,69 @@
+﻿@model EitsalatRegTry.DTO.Finalize.Transaction
+@{
+    string ResponseCode = ViewBag.ResponseCode;
+}
+<link rel="stylesheet" type="text/css" href="~/tenant01/assets/css/Finlize.css" />
+@*<h2>RS: @ResponseCode</h2>
+@ViewBag.RawResult*@
+
+
+<body>
+    @if (ResponseCode == "0")
+    {
+        <section>
+            <div>
+                <img src="~/tenant01/assets/Success_message.jpg">
+                <h2>Thank you!</h2>
+                 <p>
+                    Your payment has been completed successfully.<br> <strong> Reference No. @ViewBag.TransactionID</strong>
+                </p>
+            </div>
+        </section>
+    }
+    else
+    {
+        <section>
+            <div>
+                <h2>Payment Failed!</h2>
+                <p>
+                   Your payment could not been completed. Please try again, later <br>
+                </p>
+            </div>
+        </section>
+    }
+
+</body>
+
+
+
+@*<body style="background: #f7f7f7;">
+@if (ResponseCode == "0")
+{
+    <section style=" margin: 0 auto; text-align: center; padding: 10px 0; font-family: sans-serif; border-radius: 4px; margin-top: 70px;">
+        <div>
+            <img src="https://uatlandlord.fabproperties.ae/tenant01/assets/Success_message.jpg" style="    width: 130px;">
+            <h2 style=" margin: 10px 0; font-size: 6vw;">Thank you!</h2>
+            <p style="font-size: 16px; padding: 0 20px; line-height: 1.4; font-size: 5vw;">
+                Your payment is complete with Referernce No. @ViewBag.TransactionID. Please click on back button at the top to go back to contracts.
+            </p>
+        </div>
+    </section>
+}
+else
+{
+    <section style=" margin: 0 auto; text-align: center; padding: 10px 0; font-family: sans-serif; border-radius: 4px; margin-top: 70px;">
+        <div>
+            <h2 style=" margin: 10px 0; font-size: 6vw;">Payment Failed!</h2>
+            <p style="font-size: 16px; padding: 0 20px; line-height: 1.4; font-size: 5vw;">
+                Please try later <br>
+
+              @*  Other Response:@ViewBag.RawResult<br>
+                Other Message:@ViewBag.otherResult*@
+
+
+           @* </p>
+        </div>
+    </section>
+}
+
+</body>*@

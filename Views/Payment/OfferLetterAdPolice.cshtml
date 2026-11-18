@@ -1,0 +1,122 @@
+﻿@{
+    Layout = null;
+}
+
+@model FABTenantApi.Models.OfferLetterVm
+if(Model != null)
+{
+    <p>
+    <img style="display: block; margin-left: auto; margin-right: auto;" src="data:image/png;base64,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" />
+</p>
+
+<h4 style="text-align:center; text-decoration:underline; font-size:25px;">Tenant Offer Letter</h4>
+<div style="padding-left:20px">
+
+
+    <p>Date : @DateTime.UtcNow.AddHours(4).ToString("MMM dd, yyyy")</p>
+    <p>This offer letter is issued at the request of the tenant without any responsibility for the company based on the below information: -</p>
+    <table style="height: 5px;" width="100%">
+        <tbody>
+            <tr>
+                <td style="width:30%">
+                    1. Tenant Name :
+                </td>
+                <td style="width:70%">@Model.TenantName</td>
+            </tr>
+            <tr>
+                <td style="width:30%">
+                    2.	Building Name :
+                </td>
+                <td style="width:70%">@Model.PropertyName</td>
+            </tr>
+            <tr>
+                <td style="width:30%">
+                    3.	Unit Number :
+                </td>
+                <td style="width:70%">@Model.UnitRefNo</td>
+            </tr>
+            <tr>
+                <td style="width:30%">
+                    4.	No of Bedrooms :
+                </td>
+                <td style="width:70%"> @Model.BedRooms </td>
+            </tr>
+            <tr>
+                <td style="width:30%">
+                    5.	Annual Rent :
+                </td>
+                <td style="width:70%"> AED @Model.TotalPayable </td>
+            </tr>
+            <tr>
+                <td style="width:30%">
+                    6.	Period :
+                </td>
+                <td style="width:70%"> @Model.fromDate <span> to </span> @Model.ToDate </td>
+            </tr>
+            <tr>
+                <td style="width:30%">
+                    7.	Renewal Fees :
+                </td>
+                <td style="width:70%"> AED 525.00 </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>&nbsp;</p>
+    <p>All payments must be in favor of “FAB Properties”. Please find below the bank details.</p>
+    <div style="border: 1px solid black;">
+        <table style="height: 144px;" width="100%">
+            <tbody>
+                <tr>
+                    <td style="width: 99.5139px;">Beneficiary name:</td>
+                    <td style="width: 99.5139px;">BANK TRANSFERS-SUSPENSE AC RED</td>
+                </tr>
+                <tr>
+                    <td style="width: 99.5139px;">Beneficiary Bank:</td>
+                    <td style="width: 99.5139px;">First Abu Dhabi Bank, Abu Dhabi, U.A.E</td>
+                </tr>
+                <tr>
+                    <td style="width: 99.5139px;">Beneficiary A/c No:</td>
+                    <td style="width: 99.5139px;">AED AED153503100</td>
+                </tr>
+                <tr>
+                    <td style="width: 99.5139px;">Beneficiary Bank SWIFT:</td>
+                    <td style="width: 99.5139px;">NBADAEXXX</td>
+                </tr>
+                <tr>
+                    <td style="width: 99.5139px;">IBAN No.:</td>
+                    <td style="width: 99.5139px;">AE860351000701153503100</td>
+                </tr>
+                <tr>
+                    <td style="width: 99.5139px;">Branch:</td>
+                    <td style="width: 99.5139px;">Head Office, PO BOX 6316, Abu Dhabi</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>
+        • This  letter is valid for 30 Days from the day of issuance.
+    </p>
+    <p>
+        Regards,
+
+    </p>
+    <p style="font-size:20px; font-weight:500">
+        FAB Properties
+    </p>
+    <p>
+        This is a system generated letter which does not require signature
+    </p>
+</div>
+<hr />
+<div>
+    <p style="padding-left: 70px;">P.O. Box 33744 Abu Dhabi, United Arab Emirates Tel: +9712 6354444 Fax: +9712 6354645</p>
+    <p style="padding-left: 15px;">
+       Classified: Internal\ FAB Internal
+    </p>
+</div>
+}
+else{
+    <p>Not Data Found</p>
+}
+

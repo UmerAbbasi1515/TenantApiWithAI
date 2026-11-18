@@ -1,0 +1,632 @@
+﻿@model FABTenantApi.Models.DownloadContractVm
+
+<!DOCTYPE HTML>
+<html>
+
+<body >
+
+
+    <form id="form1" runat="server">
+        <table style="width: 100%;" cellspacing="2">
+           <tr>
+                <td style="width: 173px">
+                    <img src="~/tenant01/Images/fablogo.jpg" />
+                </td>
+                <td>:</td>
+                <td style="text-align: center;">
+                  
+                </td>
+                <td style="text-align: right; width: 80px">
+                  
+                </td>
+                <td style="width: 80px; text-align: right;"></td>
+                <td style="text-align: center;">
+                   
+                </td>
+                <td>:</td>
+                <td style="text-align: right; width: 140px"></td>
+
+            </tr>
+
+            <tr>
+                <td style="width: 173px">
+                    CONTRACT NO.
+                </td>
+                <td>:</td>
+                <td style="text-align: center;">
+                    <asp:Label ID="lblContractNo" runat="server">@Model.ContractsVM.Contractno</asp:Label>
+                </td>
+                <td style="text-align: right; width: 80px">
+                    رقم العقد
+                </td>
+                <td style="width: 80px; text-align: right;">ISSUE DATE:</td>
+                <td style="text-align: center;">
+                    <asp:Label ID="lblIssueDate" runat="server">@Model.ContractsVM.ContractDate</asp:Label>
+                </td>
+                <td>:</td>
+                <td style="text-align: right; width: 140px">تاريخ الإصدار</td>
+
+            </tr>
+            <tr>
+                <td>
+                    POSITION
+                </td>
+                <td>:</td>
+                <td colspan="4" style="text-align: center;">
+                    <asp:Label ID="lblPosition" runat="server">@Model.Position</asp:Label>
+
+                </td>
+                <td>:</td>
+                <td style="text-align: right;">
+                    موضع
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    GOV TC NO.
+                </td>
+                <td>:</td>
+                <td colspan="4" style="text-align: center;">
+                    <asp:Label ID="lblGovTcNo" runat="server">@Model.ContractsVM.UserDefinedNo</asp:Label>
+
+                </td>
+                <td>:</td>
+                <td style="text-align: right;">
+                    رقم العقد الحكومي
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    LANDLORD
+                </td>
+                <td>:</td>
+                <td colspan="4" style="text-align: center;">
+                    <asp:Label ID="lblLandlord" runat="server"></asp:Label>
+
+                </td>
+                <td>:</td>
+                <td style="text-align: right">
+                    إسم المالك
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    PROPERTY
+                </td>
+                <td>:</td>
+                <td colspan="4" style="text-align: center;">
+                    <asp:Label ID="lblProperty" runat="server">@Model.ContractsVM.Property</asp:Label>
+
+                </td>
+                <td>:</td>
+                <td style="text-align: right">
+                    إسم العقار
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    PLOT NO .
+                </td>
+                <td>:</td>
+                <td style="text-align: left;">
+                    <asp:Label ID="PlotNo" runat="server">@Model.ContractsVM.PlotNo</asp:Label>
+                </td>
+                <td style="text-align: right;">
+                    رقم القطعة
+                </td>
+                <td style="text-align: right">SECTOR NO:</td>
+                <td>
+                    <asp:Label ID="Sector" runat="server">@Model.ContractsVM.Sector</asp:Label>
+                </td>
+                <td>:</td>
+                <td style="text-align: right;">رقم الحوض</td>
+
+            </tr>
+
+
+            <tr>
+                <td>
+                    LESSOR
+                </td>
+                <td>:</td>
+                <td colspan="2" style="text-align: left;">
+                    FAB Properties
+                </td>
+                <td colspan="2" style="text-align: right;">أبوظبي الأول العقارية  </td>
+                <td>:</td>
+
+                <td style="text-align: right">
+                    المؤجر
+                </td>
+            </tr>
+
+
+
+            <tr>
+
+                <td colspan="6" style="text-align: right;">
+                    <asp:Label ID="lblLesseeAr" runat="server">@Model.TanentVm.NameAR</asp:Label>
+
+                </td>
+                <td>:</td>
+                <td style="text-align: right;">
+                    المستأجر
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    LESSEE
+                </td>
+                <td>:</td>
+                <td colspan="6" style="text-align: left;">
+                    <asp:Label ID="lblLessee" runat="server">@Model.TanentVm.Name</asp:Label>
+
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    LESSEE ADDRESS
+                </td>
+                <td>:</td>
+                <td colspan="4" style="text-align: left;">
+                    P.O.BOX:&nbsp;<asp:Label runat="server" ID="lblPoBoxNo">@Model.TanentVm.PostBoxno</asp:Label>:&nbsp;<asp:Label runat="server" ID="lblAddress">@Model.TanentVm.EmirateName</asp:Label>
+                </td>
+
+                <td>:</td>
+                <td colspan="2" style="text-align: right">
+                    عنوان المستأجر
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td colspan="6" style="text-align: left;" class="auto-style2">
+                    Tel.:&nbsp;<asp:Label runat="server" ID="lblTelNo">@Model.TanentVm.TelNo</asp:Label>&nbsp; Mob No.:&nbsp;<asp:Label runat="server" ID="lblMobileNo">@Model.TanentVm.MobileNo</asp:Label>
+                    &nbsp;&nbsp;Fax.:&nbsp;<asp:Label runat="server" ID="lblFaxNo">@Model.TanentVm.FaxNo</asp:Label>
+                </td>
+
+            </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td colspan="6" style="text-align: left;" class="auto-style2">
+                    EMAIL:&nbsp;<asp:Label ID="lblEmail" runat="server">@Model.TanentVm.Email</asp:Label>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    OCCUPIED BY
+                </td>
+                <td>:</td>
+                <td colspan="4" style="text-align: center;">
+                    <asp:Label ID="lblOccupiedBy" runat="server">@Model.ContractsVM.OccupiedBy</asp:Label>
+
+
+                </td>
+                <td>:</td>
+                <td style="text-align: right">
+                    شاغل العين
+                </td>
+            </tr>
+
+            @foreach (var item in Model.UnitRefVm)
+            {
+                <tr id="divRentalPrmmisesNo2" runat="server">
+                    <td>
+                        RENTAL PREMISES NUMBER
+                    </td>
+                    <td>:</td>
+                    <td colspan="4" style="text-align: center;">
+                        <asp:Label ID="lblRentalPrmmisesNo2" runat="server">@item.UnitRefNo</asp:Label>
+
+                    </td>
+                    <td>:</td>
+                    <td style="text-align: right">
+                        رقم العين المؤجرة
+                    </td>
+                </tr>
+                <tr id="divNoOfBedRooms2" runat="server">
+                    <td>
+                        NO. OF BEDROOMS
+                    </td>
+                    <td>:</td>
+                    <td colspan="4" style="text-align: center;">
+                        <asp:Label ID="lblNoOfBedRooms2" runat="server">@item.BedRooms</asp:Label>
+
+                    </td>
+                    <td>:</td>
+
+
+
+                    <td style="text-align: right">
+                        عدد الغرف
+                    </td>
+                </tr>
+                <tr id="divPropertyArea2" runat="server">
+                    <td>
+                        AREA
+                    </td>
+                    <td>:</td>
+                    <td colspan="4" style="text-align: center;">
+                        @if (item.MeasurementType == "SQM")
+                        {
+                            <asp:Label ID="PropertyArea2" runat="server">@item.AreaSizeSqm @item.MeasurementType</asp:Label>
+                        }
+                        else
+                        {
+                            <asp:Label ID="PropertyArea2" runat="server">@item.Areasize @item.MeasurementType</asp:Label>
+                        }
+
+
+                    </td>
+                    <td>:</td>
+                    <td style="text-align: right">
+                        المساحة
+                    </td>
+                </tr>
+            }
+
+
+            @foreach (var item in Model.UnitStoreVm)
+            {
+                <tr>
+                    <td>
+                        STORE NO.
+                    </td>
+                    <td>:</td>
+                    <td colspan="4" style="text-align: center;">
+                        <asp:Label ID="lblStore" runat="server">@item.UnitRefNo</asp:Label>
+
+                    </td>
+                    <td>:</td>
+                    <td style="text-align: right">
+                        رقم المخزن
+                    </td>
+                </tr>
+            }
+            @foreach (var item in Model.parking)
+            {
+                <tr>
+                    <td>
+                        PARKING NO.
+                    </td>
+                    <td>:</td>
+                    <td colspan="4" style="text-align: center;">
+                        <asp:Label ID="lblParking" runat="server">@item.ParkingRefNo</asp:Label>
+
+                    </td>
+                    <td>:</td>
+                    <td style="text-align: right">
+                        رقم الموقف
+                    </td>
+                </tr>
+            }
+            <tr>
+                <td>
+                    SUBJECT OF TENANCY
+                </td>
+                <td>:</td>
+                <td colspan="4" style="text-align: center;">
+                    <asp:Label ID="lblSubjectOfTenancy" runat="server">@Model.ContractsVM.Subject</asp:Label>
+                </td>
+
+
+                <td>:</td>
+                <td style="text-align: right">
+                    موضوع الإيجار
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    LEASE COMMENCEMENT DATE:
+                </td>
+
+                <td colspan="4" style="text-align: center;">
+                    <asp:Label ID="lblLeaseCommencedate" runat="server">@Model.ContractsVM.fromDate</asp:Label>
+
+                </td>
+                <td>:</td>
+                <td style="text-align: right">
+                    تاريخ بدء الإيجار
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    LEASE EXPIRY DATE
+                </td>
+                <td>:</td>
+                <td colspan="4" style="text-align: center;">
+                    <asp:Label ID="lblExpirydate" runat="server">@Model.ContractsVM.ToDate</asp:Label>
+
+                </td>
+                <td>:</td>
+                <td style="text-align: right">
+                    تاريخ إنتهاء الإيجار
+                </td>
+            </tr>
+            <tr id="trGraceStartDate" runat="server">
+                <td colspan="2">
+                    GRACE START DATE:
+                </td>
+
+                <td colspan="4" style="text-align: center;">
+                    <asp:Label ID="lblGraceStartDate" runat="server">@Model.ContractsVM.GraceStartDate</asp:Label>
+
+                </td>
+                <td>:</td>
+                <td style="text-align: right">
+                    تاريخ بدء السماح
+                </td>
+            </tr>
+            <tr id="trGraceEndDate" runat="server">
+                <td>
+                    GRACE EXPIRY DATE
+                </td>
+                <td>:</td>
+                <td colspan="4" style="text-align: center;">
+                    <asp:Label ID="lblGraceExpiryDate" runat="server">@Model.ContractsVM.GraceEndDate</asp:Label>
+
+                </td>
+                <td>:</td>
+                <td style="text-align: right">
+                    تاريخ انتهاء المهلة
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    RENT PER ANNUM
+                </td>
+                <td>:</td>
+                <td colspan="4" style="text-align: center;">
+                    AED&nbsp;
+                    <asp:Label ID="AnnualRent" runat="server">@Model.ContractsVM.AnnualMinRent</asp:Label>
+
+                </td>
+                <td>:</td>
+                <td style="text-align: right">
+                    الإيجار السنوي
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    PERIOD RENT AMOUNT
+                </td>
+                <td>:</td>
+                <td colspan="4" style="text-align: center;">
+                    AED&nbsp;<asp:Label ID="lblRentAmount" runat="server">@Model.ContractsVM.Rentforstay</asp:Label>
+
+                </td>
+                <td>:</td>
+                <td style="text-align: right">
+                    قيمة الإيجار للفترة
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right" class="auto-style2">
+                    •           TENANT SHARE&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                </td>
+                <td class="auto-style2">:</td>
+                <td colspan="4" style="text-align: center;" class="auto-style2">
+                    <asp:Label ID="lblTenantShare" runat="server">@Model.ContractsVM.TenantShare</asp:Label>
+
+                </td>
+                <td class="auto-style2">:</td>
+                <td style="text-align: left" class="auto-style2">
+                    &nbsp;&nbsp;&nbsp;&nbsp;حصة المستأجر  •&nbsp;&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right">•  OCCUPANT SHARE&nbsp;&nbsp; </td>
+                <td>:</td>
+                <td colspan="4" style="text-align: center;">
+                    <asp:Label ID="lblOccupantShare" runat="server">@Model.ContractsVM.OccupantShare</asp:Label>
+
+                </td>
+                <td>:</td>
+                <td style="text-align: left">
+                    حصة شاغل العين •
+                </td>
+            </tr>
+
+            <tr>
+
+                <td colspan="2">
+                    SECURITY DEPOSIT/PAID ON&nbsp;:
+
+                </td>
+
+                <td colspan="4" style="text-align: center;">
+                    AED&nbsp;<asp:Label ID="lblSecurityDept" runat="server">@Model.ContractsVM.SecurtiyDeposits</asp:Label>
+                    &nbsp;/ &nbsp;<asp:Label ID="lblPaidOn" runat="server">@Model.TransactionDate</asp:Label>
+
+                </td>
+
+                <td style="text-align: center;">
+                </td>
+
+                <td colspan="2" style="text-align: right;"><span style="float: left">:</span>التأمين/المدفوع بتاريخ </td>
+
+            </tr>
+            <tr style="height: 5px">
+                <td colspan="8"></td>
+            </tr>
+
+
+            <tr>
+                <td colspan="4" style="">
+                    ALL PAYMENTS TO BE MADE TO THE BENEFIT OF FAB
+                    PROPERTIES OR ANY THIRD PARTY DESIGNATED
+                    BY THE LESSOR
+                </td>
+                <td colspan="4" style="text-align: right;">يتم سداد أية دفعات مستحقة لصالح أبوظبي الأول العقارية أو أي جهة أخرى يتم تحديدها من قبل المؤجر</td>
+            </tr>
+            <tr style="height: 5px">
+                <td colspan="8"></td>
+            </tr>
+            <tr style="margin-top: 5px">
+                <td colspan="4">ADDITIONAL TERMS</td>
+                <td colspan="4" style="text-align: right">شروط إضافية</td>
+            </tr>
+            <tr>
+                <td colspan="8" style="border: solid 1px black; height: 32px; vertical-align: top;">&nbsp;&nbsp;<asp:Label runat="server" ID="lblAddtionalTermEmail">@Model.ContractsVM.AdditionalTerms</asp:Label></td>
+            </tr>
+
+            <tr>
+                <td colspan="4" style="padding-right: 5px">
+                    The terms and conditions set out at the
+                    back of this tenancy  contract are an integeral
+                    part of this contract.
+                </td>
+                <td colspan="4" style="text-align: right;">تشكل الشروط والأحكام الموضحة في الخلف جزءا لا يتجزأ من عقد الإيجار</td>
+            </tr>
+
+
+        </table>
+
+        <table id="signatureBoard" style="width: 100%; margin-top: 0px">
+            <tr>
+                <td style="width: 40%;">
+                    <table style="width: 100%">
+                        <tr>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td style="text-align: right">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td style="text-align: right">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="auto-style1">&nbsp;</td>
+                <td style="width: 40%;">
+                    <table style="width: 100%">
+                        <tr>
+
+
+                            <td colspan="2" style="text-align:center;">
+
+
+                                @if (Model.ImageByte != null)
+                                {
+                                    string imreBase64Data = Convert.ToBase64String(@Model.ImageByte);
+                                    <img src="@string.Format("data:image/png;base64,{0}", imreBase64Data)" style="height:50px !important;">
+                                }
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td style="text-align: right">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td style="text-align: right">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                </td>
+            </tr>
+
+
+
+        </table>
+        <table id="signatureBoard" style="width: 100%; margin-top: 0px">
+            <tr>
+                <td style="width: 40%;">
+                    <table style="width: 100%">
+                        <tr>
+
+                            <td colspan="2" style="border-bottom: 1px solid black !important; height: 20px">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>SIGNATURE OF LESSOR</strong>
+                            </td>
+                            <td style="text-align: right">
+                                <strong>توقيع المؤجر</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Date</strong>
+                            </td>
+                            <td style="text-align: right">
+                                <strong>التاريخ</strong>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="auto-style1">&nbsp;</td>
+                <td style="width: 40%;">
+                    <table style="width: 100%">
+                        <tr>
+
+
+                            <td colspan="2" style="border-bottom: 1px solid black !important; height: 20px">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>SIGNATURE OF LESSEE</strong>
+                            </td>
+                            <td style="text-align: right">
+                                <strong>توقيع المستأجر</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Date</strong>
+                            </td>
+                            <td style="text-align: right">
+                                <strong>التاريخ</strong>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <strong>Prepared By:</strong>
+                    <asp:Label ID="lblPreparedBy" runat="server">@Model.PreparedBy</asp:Label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                </td>
+            </tr>
+
+
+
+        </table>
+
+
+
+
+    </form>
+</body>
+</html>

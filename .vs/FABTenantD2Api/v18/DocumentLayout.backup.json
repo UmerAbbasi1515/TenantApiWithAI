@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\AI_Apis\\TenantApiWithAI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|d:\\ai_apis\\tenantapiwithai\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|solutionrelative:controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|d:\\ai_apis\\tenantapiwithai\\controllers\\gatewaypaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|solutionrelative:controllers\\gatewaypaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|d:\\ai_apis\\tenantapiwithai\\controllers\\contractscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|solutionrelative:controllers\\contractscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|d:\\ai_apis\\tenantapiwithai\\controllers\\casecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|solutionrelative:controllers\\casecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|d:\\ai_apis\\tenantapiwithai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D16B1E1C-8A90-8485-0C8F-EBBE02C2D7B2}|FABTenantD2Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "D:\\AI_Apis\\TenantApiWithAI\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
+              "ToolTip": "D:\\AI_Apis\\TenantApiWithAI\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAGUCAAAAAAAAAAAwwG8CAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T06:04:32.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContractsController.cs",
+              "DocumentMoniker": "D:\\AI_Apis\\TenantApiWithAI\\Controllers\\ContractsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ContractsController.cs",
+              "ToolTip": "D:\\AI_Apis\\TenantApiWithAI\\Controllers\\ContractsController.cs",
+              "RelativeToolTip": "Controllers\\ContractsController.cs",
+              "ViewState": "AgIAAAMRAAAAAAAAAAApwDQSAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T05:03:35.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GatewayPaymentController.cs",
+              "DocumentMoniker": "D:\\AI_Apis\\TenantApiWithAI\\Controllers\\GatewayPaymentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GatewayPaymentController.cs",
+              "ToolTip": "D:\\AI_Apis\\TenantApiWithAI\\Controllers\\GatewayPaymentController.cs",
+              "RelativeToolTip": "Controllers\\GatewayPaymentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIBAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T04:40:36.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\AI_Apis\\TenantApiWithAI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\AI_Apis\\TenantApiWithAI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T09:17:54.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CaseController.cs",
+              "DocumentMoniker": "D:\\AI_Apis\\TenantApiWithAI\\Controllers\\CaseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CaseController.cs",
+              "ToolTip": "D:\\AI_Apis\\TenantApiWithAI\\Controllers\\CaseController.cs",
+              "RelativeToolTip": "Controllers\\CaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-09T07:22:19.535Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

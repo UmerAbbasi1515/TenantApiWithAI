@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Fabproperties-Tenant-D2/project-colors.json
+/.vs/slnx.sqlite
+/.vs/FABTenantD2Api/v17/.suo
+/.vs/FABTenantD2Api/v16/.suo
+/.vs/FABTenantD2Api/DesignTimeBuild/.dtbcache.v2
+/.vs/Fabproperties-Tenant-D2/v17/.suo
+/.vs/VSWorkspaceState.json
+/FABTenantD2Api.sln
+/.vs/FABTenantD2Api/FileContentIndex/merges
+/.vs/FABTenantD2Api/FileContentIndex

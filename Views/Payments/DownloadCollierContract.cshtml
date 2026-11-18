@@ -1,0 +1,614 @@
+﻿@model FABTenantApi.Models.DownloadContractVm
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="~/print.css" rel="stylesheet" />
+    <style>
+        .tabledetails tr td {
+            border: solid 1px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="float:left; margin-top:-10px;">
+        @if (@Model.logo != null)
+        {
+            string imreBase64Data = Convert.ToBase64String(Model.logo);
+            <img src="@string.Format("data:image/jpg;base64,{0}", imreBase64Data)">
+        }
+    </div>
+    <div style="margin-top:5px;">
+        <h3 style="text-align: center; color: #05428c;" id="h31">
+            عقد إيجار سكني
+            <br />  RESIDENTIAL TENANCY CONTRACT
+        </h3>
+    </div>
+    <br />
+    @if (Model.ContractTypeID > 0)
+    {
+        <h3 style="float: left; margin-top: -10px">
+            <asp:Label ID="lblContractCase" runat="server">@Model.ContractTypeName</asp:Label>
+        </h3>
+        <h3 style="float: right; margin-top: -10px">
+            <asp:Label ID="lblContractCaseAR" runat="server">@Model.ContractTypeName</asp:Label>
+        </h3>
+    }
+
+    <form>
+
+        <table border="1" style="border-collapse: collapse; width: 100%; table-layout: auto;" class="tabledetails">
+            <tr>
+                <td style="width: 30%; padding-left: 5px; border:solid 1px !important">
+                    <div style="float: left;">Contract No.</div>
+                    <div style="float: right;">
+                        <label ID="lblContractNo">@Model.ContractsVM.Contractno</label>
+                    </div>
+                </td>
+
+                <td style="width: 50%; padding-left: 5px;border:solid 1px !important">
+                    <div style="float: left;">Issue Date:</div>
+                    <div style="float: right">
+                        <label ID="lblIssueDate">@Model.ContractsVM.ContractDate</label>
+                    </div>
+                </td>
+                <td colspan="4" style="text-align: right; font-family: Arial !important;border:solid 1px !important">تاريخ الإصدار</td>
+            </tr>
+            <tr>
+                <td style="width: 30%; padding-left: 5px; border:solid 1px;border:solid 1px !important">
+                    <div style="float: left;">Postion</div>
+                    <div style="float: right;">
+                        <label ID="lblPosition">@Model.Position</label>
+                    </div>
+                </td>
+
+                <td style="width: 50%; padding-left: 5px;border:solid 1px;border:solid 1px !important">
+                    <div style="float: left;">Renewal</div>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;border:solid 1px !important">
+                    موضع
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30%; padding-left: 5px;border:solid 1px;border:solid 1px !important">
+                    <div style="float: left;">Government TC number:</div>
+
+                </td>
+
+                <td style="width: 50%; padding-left: 5px; text-align: center;border:solid 1px;border:solid 1px !important">
+                    <div style="float: left;">
+                        <label ID="lblGovTcNo">@Model.ContractsVM.UserDefinedNo</label>
+                    </div>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;border:solid 1px !important">
+                    رقم العقد الحكومي
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30%; padding-left: 5px;border:solid 1px !important">
+                    <div style="float: left;">LandLord</div>
+                </td>
+
+                <td style="width: 50%; padding-left: 5px; text-align: center;border:solid 1px !important">
+                    <label ID="lblLandlord">@Model.landLordDetails.LandlordName</label>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;border:solid 1px !important">
+                    إسم المالك
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30%; padding-left: 5px;border:solid 1px !important">
+                    <div style="float: left;">Lessor</div>
+                </td>
+                <td style="width: 50%; padding-left: 5px;border:solid 1px !important">
+                    <div style="float: left;">@Model.CompanyDetail.CompanyName</div>
+                    <div style="float: right;">@Model.CompanyDetail.CompanyNameAR</div>
+                </td>
+                <td colspan="4" style="text-align: right; font-family: Arial !important;border:solid 1px !important">المؤجر</td>
+            </tr>
+            <tr style="border:none !important;background-color:#05428c">
+                <td colspan="6" style="border-color:#05428c">
+                    <div style="background-color:#05428c; color: white">Property Details</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30%; padding-left: 5px;border:solid 1px !important">
+                    <div style="float: left;">Property</div>
+                </td>
+
+                <td style="width: 50%; text-align: center;border:solid 1px !important">
+                    <div>
+                        <label ID="lblProperty">@Model.ContractsVM.Property</label>
+                    </div>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;border:solid 1px !important">
+                    إسم العقار
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30%; padding-left: 5px;border:solid 1px !important">
+                    <div style="float: left;">Plot No</div>
+                    <div style="float: right;">
+                        <label ID="PlotNo">@Model.ContractsVM.PlotNo</label>
+                    </div>
+                </td>
+
+                <td style="width: 50%; padding-left: 5px;border:solid 1px !important">
+                    <div style="float: left;">Sector No:</div>
+                    <div style="float: right;">
+                        <label ID="Sector">@Model.ContractsVM.Sector</label>
+                    </div>
+                </td>
+                <td colspan="4" style="text-align: right; font-family: Arial !important;border:solid 1px !important">رقم الحوض</td>
+
+            </tr>
+
+            <tr style="border:none !important;background-color:#05428c">
+
+                <td colspan="6" style="border-color:#05428c">
+                    <div  style="background-color: #05428c; color: white;">Tenant Details</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30%; padding-left: 5px;">
+                    <div style="float: left;">Lessee</div>
+                </td>
+                <td style="width: 50%; padding-left: 5px;">
+
+                    @if (Model.LesseDetails.MasterTenantTypeID == 1)
+                    {
+
+                        <div style="float: left;">
+                            <label ID="lblLesseeAr">
+                                @Model.LesseDetails.FirstName + " " + @Model.LesseDetails.MiddleName + " " + @Model.LesseDetails.FullName
+                            </label>
+                        </div>
+
+                        <div style="text-align: right; float:right;">
+                            <label ID="lblLessee">
+                                @Model.LesseDetails.FirstNameAR + " " + @Model.LesseDetails.MiddleNameAR + " " + @Model.LesseDetails.FullNameAR
+                            </label>
+                        </div>
+                    }
+                    else
+                    {
+                        <div style="float: left;">
+                            <label ID="lblLesseeAr">
+                                @Model.LesseDetails.FullName
+                            </label>
+                        </div>
+
+                        <div style="text-align: right; float:right;">
+                            <label ID="lblLessee">
+                                @Model.LesseDetails.FullNameAR
+                            </label>
+                        </div>
+                    }
+                </td>
+                <td colspan="4" style="text-align: right; font-family: Arial !important;">
+                    المستأجر
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width: 30%; padding-left: 5px;">
+                    <div style="float: left;">Lessee Address</div>
+                </td>
+
+                <td style="width: 50%; padding-left: 5px;">
+                    <div>P.O.Box:&nbsp;<label ID="lblPoBoxNo">@Model.TanentVm.PostBoxno</label></div>
+                    <div>
+                        Tel: &nbsp;
+                        <label ID="lblTelNo">@Model.TanentVm.TelNo</label>
+                    </div>
+                    <div>
+                        Mobile: &nbsp;
+                        <label ID="lblMobileNo">@Model.TanentVm.MobileNo</label>
+                    </div>
+                    <div>
+                        Email: &nbsp;
+                        <label ID="lblEmail">@Model.TanentVm.Email</label>
+                    </div>
+                    <div>
+                        Address: &nbsp;
+                        <label ID="lblAddress">@Model.TanentVm.EmirateName</label>
+                    </div>
+
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;">
+                    عنوان المستأجر
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width: 30%; padding-left: 5px;">
+                    <div>Occupied By</div>
+                </td>
+
+                <td style="width: 50%; text-align: center;">
+                    <div>
+                        <label ID="lblOccupiedBy">@Model.ContractsVM.OccupiedBy</label>
+                    </div>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;">
+                    شاغل العين
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30%; padding-left: 5px;">
+                    <div>Rental Premises Number</div>
+                </td>
+
+                <td style="width: 50%; text-align: center;">
+                    <div>
+                        <label ID="lblRentalPrmmisesNo">
+                            @if (Model.UnitNo != null)
+                            {
+                                @Model.UnitNo.TrimEnd(',', ' ')
+                            }
+                        </label>
+                    </div>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;">
+                    رقم العين المؤجرة
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30%; padding-left: 5px;">
+                    <div>No of Bedrooms:</div>
+                </td>
+
+                <td style="width: 50%; text-align: center;">
+                    <div>
+                        <label ID="lblNoOfBedRooms">
+                            @if (Model.Bedrooms != null)
+                            {
+                                @Model.Bedrooms.TrimEnd(',', ' ');
+                            }
+                        </label>
+                    </div>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;">
+                    عدد الغرف
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30%; padding-left: 5px;">
+                    <div>Area</div>
+                </td>
+
+                <td style="width: 50%; text-align: center;">
+                    <div>
+                        <label ID="PropertyArea">
+                            @if (Model.Area != null)
+                            {
+                                @Model.Area.TrimEnd(',', ' ');
+                            }
+                        </label>
+                    </div>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;">
+                    المساحة
+                </td>
+            </tr>
+            
+            <tr style="background-color: #05428c;color:white;">
+                <td colspan="6" style="border-color:#05428c">
+                    <div  style="background-color:#05428c; color:white;">Tenancy Details</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td style="width: 30%; padding-left: 5px;">
+                    <div>Store No.</div>
+                </td>
+
+                <td style="width: 50%; text-align: center;">
+                    <div>
+                        @if (@Model.UnitStore != null)
+                        {
+                            <label ID="lblStore">@Model.UnitStore.TrimEnd(',', ' ')</label>
+                        }
+                        else
+                        {
+                            <label ID="lblStore"></label>
+                        }
+                    </div>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;">
+                    رقم المخزن
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width: 30%; padding-left: 5px;">
+                    <div>Parking No.</div>
+                </td>
+
+                <td style="width: 50%; text-align: center;">
+                    <div>
+                        <label ID="lblParking">@Model.UnitParking.TrimEnd(',', ' ')</label>
+                    </div>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;">
+                    رقم الموقف
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width: 30%; padding-left: 5px;">
+                    <div>Subject of Tenancy</div>
+                </td>
+
+                <td style="width: 50%; text-align: center;">
+                    <div>
+                        <label ID="lblSubjectOfTenancy">@Model.ContractsVM.Subject</label>
+                    </div>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;">
+                    موضوع الإيجار
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width: 30%; padding-left: 5px;">
+                    <div>Lease Commencement Date:</div>
+                </td>
+                <td style="width: 50%; text-align: center;">
+                    <div>
+                        <label ID="lblLeaseCommencedate">@Model.ContractsVM.fromDate</label>
+                    </div>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;">
+                    تاريخ بدء الإيجار
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width: 30%; padding-left: 5px;">
+                    <div>Lease Expiry Date</div>
+                </td>
+
+                <td style="width: 50%; text-align: center;">
+                    <div>
+                        <label ID="lblExpirydate">@Model.ContractsVM.ToDate</label>
+                    </div>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;">
+                    تاريخ إنتهاء الإيجار
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width: 30%; padding-left: 5px;">
+                    <div>Rent Per Annum</div>
+                </td>
+
+                <td style="width: 50%; text-align: center;">
+                    <div>AED&nbsp;<label ID="AnnualRent">@Model.ContractsVM.AnnualMinRent</label></div>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;">
+                    الإيجار السنوي
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width: 30%; padding-left: 5px;">
+                    <div>Period Rent Amount</div>
+                </td>
+
+                <td style="width: 50%; text-align: center;">
+                    <div>AED&nbsp;<label ID="lblRentAmount">@Model.ContractsVM.Rentforstay</label></div>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;">
+                    قيمة الإيجار للفترة
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width: 30%; padding-left: 5px;">
+                    <div>•  Tenant Share</div>
+                </td>
+
+                <td style="width: 50%; text-align: center;">
+                    <label ID="lblTenantShare">@Model.ContractsVM.TenantShare</label>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;">
+                    حصة المستأجر
+                </td>
+            </tr>
+
+
+            <tr>
+                <td style="width: 30%; padding-left: 5px;">
+                    <div>•  Occupant Share</div>
+                </td>
+
+                <td style="width: 50%; text-align: center;">
+                    <label ID="lblOccupantShare">@Model.ContractsVM.OccupantShare</label>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;">
+                    حصة شاغل العين •
+                </td>
+            </tr>
+
+
+            <tr>
+
+                <td style="width: 30%; padding-left: 5px;">
+                    <div>Security Deposit/Paid On&nbsp;</div>
+                </td>
+
+                <td style="width: 50%; text-align: center;">
+                    <div>
+                        AED&nbsp;<label ID="lblSecurityDept">@Model.ContractsVM.SecurtiyDeposits </label>
+                        &nbsp;/ &nbsp;<label ID="lblPaidOn">@Model.TransactionDate</label>
+                    </div>
+                </td>
+
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;">التأمين/المدفوع بتاريخ </td>
+
+            </tr>
+
+
+
+            @* <tr id="divRentalPrmmisesNo2">
+                <td style="width: 30%; padding-left: 5px;">
+                <div>Rental Premises Number:</div>
+                </td>
+
+                <td style="width: 50%; text-align: center;">
+                <div>
+                <label ID="lblRentalPrmmisesNo2">
+                @if (Model.UnitNo != null)
+                {
+                @Model.UnitNo.TrimEnd(' ').TrimEnd(',')
+                }
+                </label>
+                </div>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;">
+                رقم العين المؤجرة
+                </td>
+                </tr>
+                <tr id="divNoOfBedRooms2">
+                <td style="width: 30%; padding-left: 5px;">
+                <div>NO. OF BEDROOMS</div>
+                </td>
+
+                <td style="width: 50%; text-align: center;">
+                <div>
+                <label ID="lblNoOfBedRooms2">
+                @if (Model.Bedrooms != null)
+                {
+                @Model.Bedrooms.TrimEnd(' ').TrimEnd(',')
+                }
+                </label>
+                </div>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;">
+                عدد الغرف
+                </td>
+                </tr>
+                <tr id="divPropertyArea2">
+                <td style="width: 30%; padding-left: 5px;">
+                <div>Area</div>
+                </td>
+
+                <td style="width: 50%; text-align: center;">
+                <div>
+                <label ID="PropertyArea2">
+                @if (Model.Bedrooms != null)
+                {
+                @Model.Bedrooms.TrimEnd(' ').TrimEnd(',')
+                }
+                </label>
+                </div>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;">
+                المساحة
+                </td>
+                </tr>*@
+
+
+            @*<tr id="trGraceStartDate">
+                <td style="width: 30%; padding-left: 5px;">
+                <div>Grace Start Date:</div>
+                </td>
+
+                <td style="width: 50%; text-align: center;">
+                <div>
+                <label ID="lblGraceStartDate">@Model.ContractsVM.GraceStartDate</label>
+                </div>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;">
+                تاريخ بدء السماح
+                </td>
+                </tr>
+                <tr id="trGraceEndDate">
+                <td style="width: 30%; padding-left: 5px;">
+                <div>Grace Expiry Date</div>
+                </td>
+
+                <td style="width: 50%; text-align: center;">
+                <div>
+                <label ID="lblGraceExpiryDate">@Model.ContractsVM.GraceEndDate</label>
+                </div>
+                </td>
+
+                <td colspan="4" style="text-align: right; font-family: Arial !important;">
+                تاريخ انتهاء المهلة
+                </td>
+                </tr>*@
+        </table>
+        <br />
+        <br />
+
+        <table border="1" style="border-collapse: collapse; width: 100%; table-layout: auto;">
+            <tr>
+                <td style="width: 50%;">
+                    <div>All Payment to be made to the benefit of the Landlord.</div>
+                </td>
+                <td style="text-align: right; width: 50%;">يتم سداد أية دفعات مستحقة لصالح المالك</td>
+            </tr>
+        </table>
+
+        <br />
+        <div>
+            <div style="float: left; font-weight:bolder; color: #05428c;">
+                Additional Terms
+            </div>
+
+            <div style="float: right; font-family: Arial !important; font-weight: bolder; color: #05428c">
+                شروط إضافية
+            </div>
+        </div>
+
+        <br />
+        <div style="border: solid 1px black; height: 32px; width: 100%; vertical-align: top;">
+            <label ID="lblAddtionalTermEmail">@Model.ContractsVM.AdditionalTerms</label>
+        </div>
+
+        <br />
+
+        <div>
+            <div style="padding-left: 5px; width: 48%; float: left;">
+                The terms and conditions set out at the
+                back of this tenancy  contract are an integeral
+                part of this contract.
+            </div>
+            <div style="float: right; text-align: right; width: 50%; font-family: Arial !important;">
+                تشكل الشروط والأحكام الموضحة في الخلف جزءا لا يتجزأ من عقد الإيجار
+            </div>
+        </div>
+    </form>
+    
+</body>
+</html>
+
+
